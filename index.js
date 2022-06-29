@@ -23,6 +23,7 @@ const config = {
   }
 };
 
+const now = () => new Date().toISOString().slice(0, 19).replace('T', ' ');
 
 // TODO: MISSING 'Google Meet call start/end' triggers
 (async () => {
@@ -44,7 +45,7 @@ const config = {
 
   const setBusyMode = async (mode) => {
     const status = await eWeLinkConnection.setDevicePowerState(config.eWeLink.targetDeviceId, mode ? 'on' : 'off');
-    console.log('BusyMode: (provided / device)', mode, '/' , status.state);
+    console.log('BusyMode: (provided / device)', mode, '/' , status.state, 'at', now());
   }
 
   const slackConnection = new App({
