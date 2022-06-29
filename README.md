@@ -1,7 +1,7 @@
 # DIY BusyLight
 > It syncs Slack status with your eWeeLink IOT devices. (eg. 5$ Sonoff Wifi Switch)
 ---
-
+### Instructions:
 
 1. Add your `IOT device` to an [eWeeLink account](https://ewelink.cc).
 
@@ -17,5 +17,5 @@
       -  user_status_changed
    -  Install app
 3. Fill `config` variable in index.js.
-3. Run: `node index.js`
+4. Run: `yarn & node index.js`
 
