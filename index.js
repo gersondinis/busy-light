@@ -6,7 +6,7 @@ const config = {
     appToken: 'xapp-1-...',
     token: 'xoxb-...',
     targetUsername: '',
-    busyStatuses: ['In a meeting', 'In a huddle', 'in_a_huddle', 'On a call'],
+    busyStatuses: ['In a meeting', 'In a huddle', 'in_a_huddle', 'On a call', 'Busy'],
     events: {
       USER_STATUS_CHANGED: 'user_status_changed',
       USER_HUDDLE_CHANGED: 'user_huddle_changed',
