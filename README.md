@@ -17,5 +17,5 @@
       -  user_status_changed
    -  Install app
 3. Fill `config` variable in index.js.
-4. Run: `yarn & node index.js`
+4. Run: `yarn && node index.js`
 
