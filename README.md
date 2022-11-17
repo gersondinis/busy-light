@@ -9,7 +9,7 @@
    -  Socket Mode on
    -  Add App-Level Token with 'connections:write'
    -  OAuth & Permissions > create OAuth token 'xoxb-...'
-   -  Scopes: 
+   -  Scopes:
       -  Bot Token Scopes: ['calls:read', 'chat:write', 'dnd:read']
       -  User Token Scopes: ['users:read']
    -  Event Subscriptions > Subscribe to this events on behalf of users:
