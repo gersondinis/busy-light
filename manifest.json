@@ -1,0 +1,31 @@
+{
+    "display_information": {
+        "name": "BusyLight"
+    },
+    "features": {
+        "bot_user": {
+            "display_name": "BusyLight",
+            "always_online": false
+        }
+    },
+    "oauth_config": {
+        "scopes": {
+            "user": [
+                "users:read"
+            ],
+            "bot": [
+                "calls:read",
+                "chat:write",
+                "dnd:read"
+            ]
+        }
+    },
+    "settings": {
+        "interactivity": {
+            "is_enabled": true
+        },
+        "org_deploy_enabled": false,
+        "socket_mode_enabled": true,
+        "token_rotation_enabled": false
+    }
+}

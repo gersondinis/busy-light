@@ -5,7 +5,7 @@
 
 1. Add your `IOT device` to an [eWeeLink account](https://ewelink.cc).
 
-2. Create a `Slack app` with the following configurations:
+2. Create a `Slack app` using `manifest.json` or manually with the following configurations:
    -  Socket Mode on
    -  Add App-Level Token with 'connections:write'
    -  OAuth & Permissions > create OAuth token 'xoxb-...'
