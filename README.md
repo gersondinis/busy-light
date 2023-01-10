@@ -12,10 +12,11 @@
    -  Scopes:
       -  Bot Token Scopes: ['calls:read', 'chat:write', 'dnd:read']
       -  User Token Scopes: ['users:read']
+   -  Enable events on Event Subscriptions
    -  Event Subscriptions > Subscribe to this events on behalf of users:
       -  user_huddle_changed
       -  user_status_changed
    -  Install app
 3. Fill `config` variable in index.js.
 4. Run: `yarn && node index.js`
-
+5. Add Slack Google Calendar integration to sync your slack status with calendar events.

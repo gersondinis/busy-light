@@ -16,11 +16,22 @@
             "bot": [
                 "calls:read",
                 "chat:write",
-                "dnd:read"
+                "dnd:read",
+                "users:read"
             ]
         }
     },
     "settings": {
+        "event_subscriptions": {
+            "user_events": [
+                "user_huddle_changed",
+                "user_status_changed"
+            ],
+            "bot_events": [
+                "user_huddle_changed",
+                "user_status_changed"
+            ]
+        },
         "interactivity": {
             "is_enabled": true
         },
