@@ -44,8 +44,12 @@ const now = () => new Date().toISOString().slice(0, 19).replace('T', ' ');
   // console.log(status);
 
   const setBusyMode = async (mode) => {
-    const status = await eWeLinkConnection.setDevicePowerState(config.eWeLink.targetDeviceId, mode ? 'on' : 'off');
-    console.log('BusyMode: (provided / device)', mode, '/' , status.state, 'at', now());
+    try {
+      const status = await eWeLinkConnection.setDevicePowerState(config.eWeLink.targetDeviceId, mode ? 'on' : 'off');
+      console.log('BusyMode: (provided / device)', mode, '/' , status.state, 'at', now());
+    } catch (e) {
+      console.error(e?.message || String(e));
+    }
   }
 
   const slackConnection = new App({
